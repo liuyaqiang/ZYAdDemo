@@ -1,0 +1,6 @@
+framework module ZYCoreKit {
+  umbrella header "ZYCoreKit.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,109 @@
+PODS:
+  - AppsFlyerFramework (4.10.4)
+  - Bytedance-UnionAD (2.5.1.2)
+  - FacebookAdsSDK (5.5.0):
+    - FBSDKCoreKit
+  - FBSDKCoreKit (5.11.1):
+    - FBSDKCoreKit/Basics (= 5.11.1)
+    - FBSDKCoreKit/Core (= 5.11.1)
+  - FBSDKCoreKit/Basics (5.11.1)
+  - FBSDKCoreKit/Core (5.11.1):
+    - FBSDKCoreKit/Basics
+  - Google-Mobile-Ads-SDK (7.50.0):
+    - GoogleAppMeasurement (~> 6.0)
+  - GoogleAppMeasurement (6.1.6):
+    - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
+    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Network (~> 6.0)
+    - "GoogleUtilities/NSData+zlib (~> 6.0)"
+    - nanopb (= 0.3.9011)
+  - GoogleUtilities/AppDelegateSwizzler (6.3.2):
+    - GoogleUtilities/Environment
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (6.3.2)
+  - GoogleUtilities/Logger (6.3.2):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (6.3.2):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (6.3.2):
+    - GoogleUtilities/Logger
+    - "GoogleUtilities/NSData+zlib"
+    - GoogleUtilities/Reachability
+  - "GoogleUtilities/NSData+zlib (6.3.2)"
+  - GoogleUtilities/Reachability (6.3.2):
+    - GoogleUtilities/Logger
+  - IronSourceSDK (6.8.7.0)
+  - MBProgressHUD (1.1.0)
+  - nanopb (0.3.9011):
+    - nanopb/decode (= 0.3.9011)
+    - nanopb/encode (= 0.3.9011)
+  - nanopb/decode (0.3.9011)
+  - nanopb/encode (0.3.9011)
+  - SDWebImage (5.3.2):
+    - SDWebImage/Core (= 5.3.2)
+  - SDWebImage/Core (5.3.2)
+  - "UMCAnalyticsGame (6.0.5+G)":
+    - UMCCommon
+  - UMCCommon (2.1.1)
+  - UnityAds (3.3.0)
+  - VungleSDK-iOS (6.4.5)
+  - ZYAdSDK (1.4.5):
+    - ZYCoreKit
+  - ZYCoreKit (1.3.1)
+
+DEPENDENCIES:
+  - AppsFlyerFramework (= 4.10.4)
+  - Bytedance-UnionAD (= 2.5.1.2)
+  - FacebookAdsSDK (= 5.5.0)
+  - Google-Mobile-Ads-SDK (= 7.50.0)
+  - IronSourceSDK (= 6.8.7.0)
+  - MBProgressHUD
+  - SDWebImage
+  - "UMCAnalyticsGame (= 6.0.5+G)"
+  - UnityAds (= 3.3.0)
+  - VungleSDK-iOS (= 6.4.5)
+  - ZYAdSDK (= 1.4.5)
+
+SPEC REPOS:
+  trunk:
+    - AppsFlyerFramework
+    - Bytedance-UnionAD
+    - FacebookAdsSDK
+    - FBSDKCoreKit
+    - Google-Mobile-Ads-SDK
+    - GoogleAppMeasurement
+    - GoogleUtilities
+    - IronSourceSDK
+    - MBProgressHUD
+    - nanopb
+    - SDWebImage
+    - UMCAnalyticsGame
+    - UMCCommon
+    - UnityAds
+    - VungleSDK-iOS
+    - ZYAdSDK
+    - ZYCoreKit
+
+SPEC CHECKSUMS:
+  AppsFlyerFramework: aeb793095c1b33170ae30bef66652c0645f409be
+  Bytedance-UnionAD: 81eb4b3cfbe66e22b44ddc33c05073334f3eefdf
+  FacebookAdsSDK: 7a03b4fd83d81ef57762327e6a21c4987c993b2c
+  FBSDKCoreKit: 5aada61a229054694810f3cee231f986004b3c49
+  Google-Mobile-Ads-SDK: d48dbaf5bae1ab7a94a9786f493c26c454bc6f16
+  GoogleAppMeasurement: dfe55efa543e899d906309eaaac6ca26d249862f
+  GoogleUtilities: 547a86735c6f0ee30ad17e94df4fc21f616b71cb
+  IronSourceSDK: 23501d62c9b545244d58d5da02e4926ff6382b91
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  nanopb: 18003b5e52dab79db540fe93fe9579f399bd1ccd
+  SDWebImage: 6ac2eb96571bff96ecde31a987172c5934a0eb7d
+  UMCAnalyticsGame: 8d2d4913ff4d0a7c1455721c667ca4fea59966c9
+  UMCCommon: 971f324a5a99c9d662ae040a815e7e3d7ef8b2a8
+  UnityAds: 0b7ecf8df83e8a3d62122a3fcf61e47c8e848f3c
+  VungleSDK-iOS: 8951559521dd73c3f947757e9a4c4bbfd8645b7f
+  ZYAdSDK: d7b43c067a75a8414250e3fb502644165f92fa8f
+  ZYCoreKit: b60b2d5e4146c7d1acb7b2d54844ce0936a41d64
+
+PODFILE CHECKSUM: 13757e36ddfc6f4c6e7ccf6eb4eb3c7fa9a29adf
+
+COCOAPODS: 1.8.4
