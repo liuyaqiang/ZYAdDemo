@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-static NSString* const ZYCoreKitVersion = @"1.3.1";
+static NSString* const ZYCoreKitVersion = @"1.3.2";
 
 
 #import <ZYCoreKit/ZYClientInfoUtils.h>

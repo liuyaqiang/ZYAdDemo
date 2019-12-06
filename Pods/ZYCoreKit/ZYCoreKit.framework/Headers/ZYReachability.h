@@ -43,10 +43,10 @@ FOUNDATION_EXPORT const unsigned char ReachabilityVersionString[];
 #define NS_ENUM(_type, _name) enum _name : _type _name; enum _name : _type
 #endif
 
-extern NSString *const kYFReachabilityChangedNotification;
+extern NSString *const kZYReachabilityChangedNotification;
 
-typedef NS_ENUM(NSInteger, YFNetworkStatus) {
-    // Apple YFNetworkStatus Compatible Names.
+typedef NS_ENUM(NSInteger, ZYNetworkStatus) {
+    // Apple ZYNetworkStatus Compatible Names.
     kNotReachable = 0,
     kReachableViaWiFi = 2,
     kReachableViaWWAN = 1
@@ -94,7 +94,7 @@ typedef void (^NetworkReachability)(ZYReachability * reachability, SCNetworkConn
 // Is user intervention required?
 -(BOOL)isInterventionRequired;
 
--(YFNetworkStatus)currentReachabilityStatus;
+-(ZYNetworkStatus)currentReachabilityStatus;
 -(SCNetworkReachabilityFlags)reachabilityFlags;
 -(NSString*)currentReachabilityString;
 -(NSString*)currentReachabilityFlags;

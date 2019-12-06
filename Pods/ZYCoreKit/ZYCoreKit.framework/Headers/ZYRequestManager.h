@@ -1,5 +1,5 @@
 //
-//  YFRequestManager.h
+//  ZYRequestManager.h
 //  PluginSDK
 //
 //  Created by liuyaqiang on 2017/5/26.
