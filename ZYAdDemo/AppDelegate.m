@@ -40,7 +40,7 @@
     //广告设置测试后台数据
     [ZYAds sharedInstance].isTestEnvironment = YES;
     //admob测试设备
-    [ZYAds sharedInstance].admobTestDevices = @[kGADSimulatorID];
+//    [ZYAds sharedInstance].admobTestDevices = @[kGADSimulatorID];
     //umeng
 //    [UMConfigure setLogEnabled:YES];
     //AppsFlyer日志
