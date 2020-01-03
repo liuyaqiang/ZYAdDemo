@@ -7,21 +7,21 @@ pod 'MBProgressHUD'
 
 #ZYAdSDK-----------------
 pod 'ZYCoreKit', '1.3.2'
-pod 'ZYAdSDK', '1.4.6'
+pod 'ZYAdSDK', '1.4.7'
 
 #广告---------------------
 #toutiao
-pod 'Bytedance-UnionAD', '2.5.1.2'
+pod 'Bytedance-UnionAD', '2.5.1.5'
 #admob
-pod 'Google-Mobile-Ads-SDK', '7.50.0'
+pod 'Google-Mobile-Ads-SDK', '7.53.0'
 #unity
-pod 'UnityAds', '3.3.0'
+pod 'UnityAds', '3.4.0'
 #facebook
-pod 'FacebookAdsSDK', '5.5.0'
+pod 'FacebookAdsSDK', '5.6.0'
 #ironsource
-pod 'IronSourceSDK','6.8.7.0'
+pod 'IronSourceSDK','6.11.0.0'
 #vungle
-pod 'VungleSDK-iOS', '6.4.5'
+pod 'VungleSDK-iOS', '6.4.6'
 
 #工具---------------------
 #umeng统计
