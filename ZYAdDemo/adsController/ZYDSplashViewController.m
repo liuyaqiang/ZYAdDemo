@@ -33,12 +33,12 @@
 #pragma mark - ZYAdSplashDelegate
 - (void)splashDidLoad:(ZYAdSplash *)ad
 {
-    [self hideHudLoadSuccess];
+    [self showHudLoadSuccess];
 
 }
 - (void)splashDidFail:(ZYAdSplash *)ad withError:(NSError *)error
 {
-    [self hideHudLoadFailed];
+    [self showHudLoadFailed];
 
 }
 - (void)splashDidShow:(ZYAdSplash *)ad

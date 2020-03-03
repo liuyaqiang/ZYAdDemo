@@ -255,7 +255,6 @@
 				B9A7C0C4226EBA8F0014AFE3 /* Frameworks */,
 				B9A7C0C5226EBA8F0014AFE3 /* Resources */,
 				83DD460DC531EABF61F2753D /* [CP] Copy Pods Resources */,
-				15671FE2022BAB1E5D5CD37A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -386,23 +385,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		15671FE2022BAB1E5D5CD37A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZYAdDemo/Pods-ZYAdDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ZYAdDemo/Pods-ZYAdDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZYAdDemo/Pods-ZYAdDemo-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		83DD460DC531EABF61F2753D /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -647,9 +629,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.7;
+				MARKETING_VERSION = 1.4.8;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = zy.ZYAdDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = zy.zyaddemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -676,9 +658,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.4.7;
+				MARKETING_VERSION = 1.4.8;
 				ONLY_ACTIVE_ARCH = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = zy.ZYAdDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = zy.zyaddemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";

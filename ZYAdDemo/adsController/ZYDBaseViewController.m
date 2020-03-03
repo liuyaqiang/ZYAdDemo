@@ -57,34 +57,56 @@
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     
 }
-- (void)hideHudLoadSuccess
+- (void)showHudLoadSuccess
 {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:self.view];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     hud.label.text = @"加载成功";
     hud.mode = MBProgressHUDModeText;
     [hud hideAnimated:NO afterDelay:0.8];
     
-    self.showBu.backgroundColor = [UIColor greenColor];
-    self.showBu.enabled = YES;
+    [self showBuEnabled:YES];
 }
-- (void)hideHudLoadFailed
+- (void)showHudLoadFailed
 {
-    MBProgressHUD *hud = [MBProgressHUD HUDForView:self.view];
+    MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    [hud showAnimated:YES];
     hud.label.text = @"加载失败";
     hud.mode = MBProgressHUDModeText;
     [hud hideAnimated:NO afterDelay:0.8];
     
-    self.showBu.backgroundColor = [UIColor grayColor];
-    self.showBu.enabled = NO;
+    [self showBuEnabled:NO];
+
 }
 
+- (void)showBuEnabled:(BOOL)enable
+{
+    self.showBu.enabled = enable;
+    if (enable) {
+        self.showBu.backgroundColor = [UIColor greenColor];
+
+    }else{
+        self.showBu.backgroundColor = [UIColor grayColor];
+
+    }
+}
+- (void)loadBuEnabled:(BOOL)enable
+{
+     self.loadBu.enabled = enable;
+     if (enable) {
+         self.loadBu.backgroundColor = [UIColor greenColor];
+
+     }else{
+         self.loadBu.backgroundColor = [UIColor grayColor];
+     }
+}
 - (void)loadAd:(UIButton *)button
 {
-    [self showHudLoadAd];
+    [self showBuEnabled:NO];
 }
+
 - (void)showAd:(UIButton *)button
 {
-
+    [self showBuEnabled:NO];
 }
 
 @end

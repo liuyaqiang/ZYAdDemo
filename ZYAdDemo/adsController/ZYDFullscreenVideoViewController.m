@@ -19,6 +19,8 @@
     [self.video load];
 }
 - (void)showAd:(UIButton *)button{
+    [super showAd:button];
+    
     if (self.video.isReady) {
         [self.video showFromRootViewController:self];
     }else{
@@ -28,34 +30,35 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showHudLoadAd];
-    
+       
     self.video = [[ZYAdFullscreenVideo alloc] init];
     self.video.delegate = self;
     [self.video load];
 }
 #pragma mark - ZYAdFullscreenVideoDelegate
-- (void)fullscreenVideoDidLoad:(ZYAdRewardedVideo *)ad
+- (void)fullscreenVideoDidLoad:(ZYAdFullscreenVideo *)ad
 {
-    [self hideHudLoadSuccess];
+    [self showHudLoadSuccess];
 }
-- (void)fullscreenVideoDidFail:(ZYAdRewardedVideo *)ad withError:(NSError *)error
+- (void)fullscreenVideoDidFail:(ZYAdFullscreenVideo *)ad withError:(NSError *)error
 {
-    [self hideHudLoadFailed];
+    [self showHudLoadFailed];
     
 }
-- (void)fullscreenVideoDidShow:(ZYAdRewardedVideo *)ad
-{
-    
-}
-- (void)fullscreenVideoDidClick:(ZYAdRewardedVideo *)ad
+- (void)fullscreenVideoDidShow:(ZYAdFullscreenVideo *)ad
 {
     
 }
-- (void)fullscreenVideoDidClose:(ZYAdRewardedVideo *)ad
+- (void)fullscreenVideoDidClick:(ZYAdFullscreenVideo *)ad
 {
-    [self showHudLoadAd];
-        
+    
 }
+- (void)fullscreenVideoDidClose:(ZYAdFullscreenVideo *)ad
+{
 
+}
+- (void)fullscreenVideoDidComplete:(ZYAdFullscreenVideo *)ad
+{
+
+}
 @end

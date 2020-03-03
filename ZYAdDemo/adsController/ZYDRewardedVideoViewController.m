@@ -19,6 +19,8 @@
     [self.video load];
 }
 - (void)showAd:(UIButton *)button{
+    [super showAd:button];
+    
     if (self.video.isReady) {
         [self.video showFromRootViewController:self];
     }else{
@@ -28,8 +30,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showHudLoadAd];
-
+    
     self.video = [[ZYAdRewardedVideo alloc] init];
     self.video.delegate = self;
     [self.video load];
@@ -37,11 +38,11 @@
 #pragma mark - ZYAdRewardedVideoDelegate
 - (void)rewardedVideoDidLoad:(ZYAdRewardedVideo *)ad
 {
-    [self hideHudLoadSuccess];
+    [self showHudLoadSuccess];
 }
 - (void)rewardedVideoDidFail:(ZYAdRewardedVideo *)ad withError:(NSError *)error
 {
-    [self hideHudLoadFailed];
+    [self showHudLoadFailed];
 
 }
 - (void)rewardedVideoDidShow:(ZYAdRewardedVideo *)ad
@@ -54,8 +55,7 @@
 }
 - (void)rewardedVideoDidClose:(ZYAdRewardedVideo *)ad
 {
-    [self showHudLoadAd];
-        
+
 }
 - (void)rewardedVideoDidComplete:(ZYAdRewardedVideo *)ad
 {

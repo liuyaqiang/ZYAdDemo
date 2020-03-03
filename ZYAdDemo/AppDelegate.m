@@ -13,14 +13,13 @@
 #import <ZYAdSDK/ZYAdSplash.h>
 #import <ZYAdSDK/ZYAdSDK.h>
 
-#import <GoogleMobileAds/GoogleMobileAds.h>
 
 //友盟初始化
-#import <UMCommon/UMConfigure.h>
+//#import <UMCommon/UMConfigure.h>
 //友盟推送
 //#import <UMPush/UMessage.h>
 
-#import <AppsFlyerLib/AppsFlyerTracker.h>
+//#import <AppsFlyerLib/AppsFlyerTracker.h>
 
 
 @interface AppDelegate ()
@@ -34,26 +33,23 @@
     
     //test------------------------
     //注意：如果正式环境请注销测试代码
-#ifdef DEBUG
     //广告日志输出
     [ZYAds sharedInstance].logEnable = YES;
     //广告设置测试后台数据
     [ZYAds sharedInstance].isTestEnvironment = YES;
     //admob测试设备
-//    [ZYAds sharedInstance].admobTestDevices = @[kGADSimulatorID];
+//    [ZYAds sharedInstance].admobTestDevices = @[@"0f021440996165d3dd171da86321ffd6"];
     //umeng
 //    [UMConfigure setLogEnabled:YES];
     //AppsFlyer日志
 //    [AppsFlyerTracker sharedTracker].isDebug= true;
-#else
     
-#endif
-                             
+    
     //基本配置---------------------
     //渠道设置
     [ZYAds sharedInstance].appChannel = ZYD_APPCHANNEL;
-    //地区设置，注意：请按发布地区选择海外或国内
-//    [ZYAds sharedInstance].publishZone = ZYPublishZoneForeign;
+//    地区设置，注意：请按发布地区选择海外或国内 
+//    [ZYAds sharedInstance].publishZone = ZYPublishZoneForeign;
     [ZYAds sharedInstance].publishZone = ZYPublishZoneDomestic;
 
     //友盟初始化
@@ -75,7 +71,7 @@
 //AppsFlyer
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     
-    [[AppsFlyerTracker sharedTracker] trackAppLaunch];
+//    [[AppsFlyerTracker sharedTracker] trackAppLaunch];
 }
 /*
  

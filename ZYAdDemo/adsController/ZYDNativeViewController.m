@@ -29,8 +29,6 @@
     [super viewDidLoad];
     self.showBu.hidden = YES;
 
-    [self showHudLoadAd];
-
     self.native = [[ZYAdNative alloc] init];
     self.native.delegate = self;
     [self.native load];
@@ -54,12 +52,12 @@
     [self.native registerContainerView:self.containerView withClickableViews:clickDic];
     
     
-    [self hideHudLoadSuccess];
+    [self showHudLoadSuccess];
 
 }
 - (void)nativeDidFail:(ZYAdNative *)ad withError:(NSError *)error
 {
-    [self hideHudLoadFailed];
+    [self showHudLoadFailed];
 
 }
 - (void)nativeDidClick:(ZYAdNative *)ad

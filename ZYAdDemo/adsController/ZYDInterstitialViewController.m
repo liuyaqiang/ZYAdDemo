@@ -20,6 +20,8 @@
 }
 
 - (void)showAd:(UIButton *)button{
+    [super showAd:button];
+    
     if (self.interstitial.isReady) {
         [self.interstitial showFromRootViewController:self];
     }else{
@@ -29,7 +31,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self showHudLoadAd];
 
     self.interstitial = [[ZYAdInterstitial alloc] init];
     self.interstitial.delegate = self;
@@ -38,12 +39,12 @@
 #pragma mark - ZYAdInterstitialDelegate
 - (void)interstitialDidLoad:(ZYAdInterstitial *)ad
 {
-    [self hideHudLoadSuccess];
+    [self showHudLoadSuccess];
 
 }
 - (void)interstitialDidFail:(ZYAdInterstitial *)ad withError:(NSError *)error
 {
-    [self hideHudLoadFailed];
+    [self showHudLoadFailed];
 
 }
 - (void)interstitialDidShow:(ZYAdInterstitial *)ad
@@ -56,7 +57,6 @@
 }
 - (void)interstitialDidClose:(ZYAdInterstitial *)ad
 {
-    [self showHudLoadAd];
 
 }
 @end

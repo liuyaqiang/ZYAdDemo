@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.showBu.hidden = YES;
-    [self showHudLoadAd];
+       
     
     ZYAdSize adSize = kZYAdSize320x50;
     self.banner = [[ZYAdBanner alloc] initWithZYSize:adSize adPoint:CGPointMake(([UIScreen mainScreen].bounds.size.width - adSize.size.width) /2.0, 0)];
@@ -34,13 +34,13 @@
 #pragma mark - ZYAdBannerDelegate
 - (void)bannerDidLoad:(ZYAdBanner *)ad
 {
-    [self hideHudLoadSuccess];
+    [self showHudLoadSuccess];
 
 }
 - (void)bannerDidFail:(ZYAdBanner *)ad withError:(NSError *)error
 {
    
-    [self hideHudLoadFailed];
+    [self showHudLoadFailed];
 
 }
 - (void)bannerDidClick:(ZYAdBanner *)ad

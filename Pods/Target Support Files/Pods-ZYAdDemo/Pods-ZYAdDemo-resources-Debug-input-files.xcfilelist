@@ -1,4 +1,2 @@
 ${PODS_ROOT}/Target Support Files/Pods-ZYAdDemo/Pods-ZYAdDemo-resources.sh
-${PODS_ROOT}/Bytedance-UnionAD/Bytedance-UnionAd/Frameworks/BUAdSDK.bundle
-${PODS_ROOT}/FBSDKCoreKit/FacebookSDKStrings.bundle
 ${PODS_ROOT}/ZYAdSDK/ZYAdSDK.bundle
