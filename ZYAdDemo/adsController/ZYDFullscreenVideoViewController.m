@@ -57,8 +57,5 @@
 {
 
 }
-- (void)fullscreenVideoDidComplete:(ZYAdFullscreenVideo *)ad
-{
 
-}
 @end
