@@ -4,7 +4,7 @@ target 'ZYAdDemo' do
 pod 'MBProgressHUD'
 pod 'SDWebImage'
 #ZYAdSDK-----------------
-pod 'ZYAdSDK','1.5.0'
+pod 'ZYAdSDK','1.5.1'
 pod 'ZYCoreKit','1.3.2'
 ##广告---------------------
 ##穿山甲
